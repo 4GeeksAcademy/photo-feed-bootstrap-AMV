@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <title>Instagram Feed</title>
+</head>
+<body>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg bg-light sticky-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-1" href="#">
+      <i class="fa-brands fa-instagram"></i>
+      <span>Instagram</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+      <ul class="navbar-nav align-items-center">
+        <li class="nav-item">
+          <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#createPostModal">
+            Create a new post
+          </button>
+        </li>
+        <li class="nav-item dropdown ms-2">
+          <a class="dropdown-toggle btn btn-secondary" href="#" id="navbarDropdownMenuLink"
+            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-cog"></i>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Profile</a>
+            <a class="dropdown-item" href="#">Settings</a>
+            <a class="dropdown-item" href="#">Log Out</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- TABS -->
+<div class="container mt-3">
+  <ul class="nav nav-tabs justify-content-center" id="instagramTabs" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active d-flex justify-content-center" id="feed-tab" data-bs-toggle="tab" data-bs-target="#feed" type="button" role="tab">
+        <i class="fas fa-stream fa-2x"></i>
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link d-flex justify-content-center" id="grid-tab" data-bs-toggle="tab" data-bs-target="#grid" type="button" role="tab">
+        <i class="fas fa-th fa-2x"></i>
+      </button>
+    </li>
+  </ul>
+
+  <div class="tab-content mt-3">
+    <!-- FEED TAB -->
+    <div class="tab-pane fade show active" id="feed" role="tabpanel">
+      <div class="d-flex flex-column align-items-center gap-3">
+        <!-- 9 feed posts -->
+        <div class="card w-50">
+          <div class="card-header d-flex justify-content-between">
+            <strong>Stuff I like</strong>
+            <small class="text-muted">08/26</small>
+          </div>
+          <img src="https://picsum.photos/600/600?random=1" class="card-img-top" alt="post1">
+          <div class="card-body">
+            <p class="mb-1"><strong>306 likes</strong></p>
+            <p class="card-text">This is an example of a very good photo you can post on Instagram!</p>
+          </div>
+        </div>
+        <div class="card w-50">
+          <div class="card-header d-flex justify-content-between">
+            <strong>Stuff I like</strong>
+            <small class="text-muted">08/25</small>
+          </div>
+          <img src="https://picsum.photos/600/600?random=2" class="card-img-top" alt="post2">
+          <div class="card-body">
+            <p class="mb-1"><strong>145 likes</strong></p>
+            <p class="card-text">This is an example of a very good photo you can post on Instagram!</p>
+          </div>
+        </div>
+        <div class="card w-50">
+          <div class="card-header d-flex justify-content-between">
+            <strong>Stuff I like</strong>
+            <small class="text-muted">08/24</small>
+          </div>
+          <img src="https://picsum.photos/600/600?random=3" class="card-img-top" alt="post3">
+          <div class="card-body">
+            <p class="mb-1"><strong>200 likes</strong></p>
+            <p class="card-text">This is an example of a very good photo you can post on Instagram!</p>
+          </div>
+        </div>
+        <div class="card w-50">
+          <div class="card-header d-flex justify-content-between">
+            <strong>Stuff I like</strong>
+            <small class="text-muted">08/23</small>
+          </div>
+          <img src="https://picsum.photos/600/600?random=4" class="card-img-top" alt="post4">
+          <div class="card-body">
+            <p class="mb-1"><strong>180 likes</strong></p>
+            <p class="card-text">This is an example of a very good photo you can post on Instagram!</p>
+          </div>
+        </div>
+        <div class="card w-50">
+          <div class="card-header d-flex justify-content-between">
+            <strong>Stuff I like</strong>
+            <small class="text-muted">08/22</small>
+          </div>
+          <img src="https://picsum.photos/600/600?random=5" class="card-img-top" alt="post5">
+          <div class="card-body">
+            <p class="mb-1"><strong>250 likes</strong></p>
+            <p class="card-text">This is an example of a very good photo you can post on Instagram!</p>
+          </div>
+        </div>
+        <div class="card w-50">
+          <div class="card-header d-flex justify-content-between">
+            <strong>Stuff I like</strong>
+            <small class="text-muted">08/21</small>
+          </div>
+          <img src="https://picsum.photos/600/600?random=6" class="card-img-top" alt="post6">
+          <div class="card-body">
+            <p class="mb-1"><strong>320 likes</strong></p>
+            <p class="card-text">This is an example of a very good photo you can post on Instagram!</p>
+          </div>
+        </div>
+        <div class="card w-50">
+          <div class="card-header d-flex justify-content-between">
+            <strong>Stuff I like</strong>
+            <small class="text-muted">08/20</small>
+          </div>
+          <img src="https://picsum.photos/600/600?random=7" class="card-img-top" alt="post7">
+          <div class="card-body">
+            <p class="mb-1"><strong>270 likes</strong></p>
+            <p class="card-text">This is an example of a very good photo you can post on Instagram!</p>
+          </div>
+        </div>
+        <div class="card w-50">
+          <div class="card-header d-flex justify-content-between">
+            <strong>Stuff I like</strong>
+            <small class="text-muted">08/19</small>
+          </div>
+          <img src="https://picsum.photos/600/600?random=8" class="card-img-top" alt="post8">
+          <div class="card-body">
+            <p class="mb-1"><strong>190 likes</strong></p>
+            <p class="card-text">This is an example of a very good photo you can post on Instagram!</p>
+          </div>
+        </div>
+        <div class="card w-50">
+          <div class="card-header d-flex justify-content-between">
+            <strong>Stuff I like</strong>
+            <small class="text-muted">08/18</small>
+          </div>
+          <img src="https://picsum.photos/600/600?random=9" class="card-img-top" alt="post9">
+          <div class="card-body">
+            <p class="mb-1"><strong>140 likes</strong></p>
+            <p class="card-text">This is an example of a very good photo you can post on Instagram!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GRID TAB -->
+    <div class="tab-pane fade" id="grid" role="tabpanel">
+      <div class="row g-1">
+        <!-- 9 squared grid posts -->
+        <div class="col-4"><img src="https://picsum.photos/600/600?random=1" class="img-fluid" alt="grid1"></div>
+        <div class="col-4"><img src="https://picsum.photos/600/600?random=2" class="img-fluid" alt="grid2"></div>
+        <div class="col-4"><img src="https://picsum.photos/600/600?random=3" class="img-fluid" alt="grid3"></div>
+        <div class="col-4"><img src="https://picsum.photos/600/600?random=4" class="img-fluid" alt="grid4"></div>
+        <div class="col-4"><img src="https://picsum.photos/600/600?random=5" class="img-fluid" alt="grid5"></div>
+        <div class="col-4"><img src="https://picsum.photos/600/600?random=6" class="img-fluid" alt="grid6"></div>
+        <div class="col-4"><img src="https://picsum.photos/600/600?random=7" class="img-fluid" alt="grid7"></div>
+        <div class="col-4"><img src="https://picsum.photos/600/600?random=8" class="img-fluid" alt="grid8"></div>
+        <div class="col-4"><img src="https://picsum.photos/600/600?random=9" class="img-fluid" alt="grid9"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL -->
+<div class="modal fade" id="createPostModal" tabindex="-1" aria-labelledby="createPostModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Create a new post</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body d-flex flex-column gap-2">
+        <textarea class="form-control" rows="3" placeholder="Write a caption..."></textarea>
+        <div class="d-flex gap-2">
+          <button class="btn btn-outline-secondary"><i class="fas fa-image"></i></button>
+          <button class="btn btn-outline-secondary"><i class="fas fa-location-dot"></i></button>
+        </div>
+      </div>
+      <div class="modal-footer bg-light">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success">Publish</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
